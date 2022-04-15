@@ -1,0 +1,23 @@
+:root {
+    --maxwidth: 1400px;
+    --searchbox:300px;
+    --small: 18px;
+    --medium: 20px;
+    --xxl:30px;
+    /* color */
+    --dark: #000;
+    --success: #22aa66;
+    --primary: #1a1ad8;
+    --danger: #ff0000;
+    --light: #fff;
+    --dark-half: #0000007b;
+    --dark-quarter: #00000034;
+    --warning:#f9c540;
+    --warning-dark:#624806;
+    --barley: #fff2d0;
+    --grey:#808080;
+    --grey-quarter:#a5a2a266;
+    --bg-scroll:#000000;
+    --inner-scroll:#c81818;
+    --light-half:#dbd9d951;
+}

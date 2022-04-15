@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsome -->
+    <!-- <link rel="stylesheet" href="fam/css/all.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="include/css/animation.css" />
+    <link rel="stylesheet" href="include/css/style.css" />
+    <link rel="stylesheet" href="include/css/media.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="container-fluid m-auto">
+      <!-- top of header -->
+      <div class="nav-top row a-center j-between">
+        <!-- contacts email, phone -->
+        <div class="row">
+          <div class="row a-center">
+            <i class="fas fa-at"></i>
+            <p>Myshop@gmail.com</p>
+          </div>
+          <div class="row a-center">
+            <i class="fas fa-phone-alt"></i>
+            <p class="success">Myshop@gmail.com</p>
+          </div>
+        </div>
+        <div class="row j-around">
+          <!-- social links -->
+          <div class="row">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+          </div>
+          <!-- Language -->
+          <div class="row a-center" style="margin-left: 30px">
+            <i class="fa fa-user"></i>
+            <p class="lang">Login</p>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Bar -->
+      <div class="nav-bar row j-around a-center">
+        <!-- Brand name -->
+        <div class="row a-center">
+          <i class="fas fa-shopping-bag"></i>
+          <h1 class="success">Myshop</h1>
+        </div>
+        <!-- Search Box -->
+        <form action="" class="row a-center search-box">
+          <input type="text" name="search" id="search" />
+          <button type="submit" class="search-button">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+        <!-- Menu items -->
+        <ul class="row a-center nav-menu">
+          <li><a href="" class="nav-link active">Home</a></li>
+          <li><a href="" class="nav-link">Shop</a></li>
+          <li id="vertical-menu" data-vertical-target="product">
+            <a href="" class="nav-link">Products</a>
+            <!-- Submenu for products -->
+            <ul class="vertical-menu row-c j-around" id="product">
+              <li>
+                <a href=""><i class="fas fa-carrot"></i>Vegitable</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-apple-alt"></i>Fruits</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-drumstick-bite"></i>Fresh meats</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-cookie-bite"></i>Fast food</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="" class="nav-link">Blog</a></li>
+          <li id="vertical-menu" data-vertical-target="page">
+            <a href="" class="nav-link">Page</a>
+            <!-- Submenu for pages -->
+            <ul class="vertical-menu row-c j-around" id="page">
+              <li>
+                <a href=""><i class="fas fa-info"></i>AboutUs</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-question"></i>FAQ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Cart and amount -->
+        <div class="row a-center cart">
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-heart"></i>
+          <div class="amount row a-center">
+            <h3>20</h3>
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="container-fluid m-auto">
+      <div class="banner-lg row a-center j-around bg-barley flyin zoom">
+        <div class="row-c j-around">
+          <h2>Great offer</h2>
+          <h1>Vegitables and Fruits</h1>
+          <h2>4.49$</h2>
+          <button class="shop-now button-lg">ShopNow</button>
+        </div>
+        <img src="include/images/banner1.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Benifits -->
+    <div class="container-fluid m-auto benifit">
+      <div class="row a-center-j-around">
+        <div class="row-c a-center j-around">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Free Shipping</h3>
+          <p>For all orders above 99$</p>
+        </div>
+        <div class="row-c a-center j-around">
+          <i class="fas fa-clock"></i>
+          <h3>Delivery On Time</h3>
+          <p>If good have problem</p>
+        </div>
+        <div class="row-c a-center j-around">
+          <i class="fas fa-credit-card"></i>
+          <h3>Secure Payment</h3>
+          <p>100% Secure payment</p>
+        </div>
+        <div class="row-c a-center j-around">
+          <i class="fas fa-headset"></i>
+          <h3>24X7 Support</h3>
+          <p>Deticated Support</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deal of the week -->
+    <div class="container-fluid m-auto">
+      <div class="heading">Deal Of the week</div>
+      <!-- Horizontal scroll container -->
+      <div class="row a-center h-scroll" id="deals-container"></div>
+    </div>
+
+    <!-- Small banners -->
+    <div class="container-fluid m-auto">
+      <div class="row a-center j-around" style="flex-wrap: wrap">
+        <div class="row a-center j-center banner banner-small flyin left">
+          <img src="include/images/banner2.png" class="m-auto" alt="" />
+          <div class="row-c j-around m-auto">
+            <h2>strawberrys</h2>
+            <h2>100% Natural</h2>
+            <h1>Sale Off 50%</h1>
+            <button class="shop-now">Shop now</button>
+          </div>
+        </div>
+        <div class="row a-center j-center banner banner-small flyin right">
+          <img src="include/images/banner3.png" class="m-auto" alt="" />
+          <div class="row-c j-between m-auto">
+            <h2>strawberrys</h2>
+            <h2>100% Natural</h2>
+            <h1>Sale Off 50%</h1>
+            <button class="shop-now">Shop now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- feautred products -->
+    <div class="container-fluid m-auto">
+      <div class="heading">Featured Product</div>
+      <div class="container-fluid">
+        <div class="container product-container" id="product-container"></div>
+      </div>
+    </div>
+
+    <!-- Banner medium -->
+    <div class="container-fluid m-auto">
+      <div class="row a-center j-even banner banner-medium flyin zoom">
+        <img src="include/images/banner4.png" class="m-auto" alt="" />
+        <div class="row-c j-around m-auto">
+          <table></table>
+          <h1>50%Off Blackfriday</h1>
+          <h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, sit.
+          </h2>
+          <button class="shop-now">Shop now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Best seller -->
+    <div class="container-fluid m-auto">
+      <div class="heading">Best Seller</div>
+      <div class="container-fluid">
+        <div class="container product-container" id="best-seller"></div>
+      </div>
+    </div>
+
+    <!-- Brands -->
+    <div class="container-fluid m-auto">
+      <div class="row a-center j-around m-auto brands flyin zoom">
+        <img src="include/images/brand1.png" alt="" />
+        <img src="include/images/brand2.png" alt="" />
+        <img src="include/images/brand4.png" alt="" />
+        <img src="include/images/brand3.png" alt="" />
+        <img src="include/images/brand4.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Best seller -->
+    <div class="container-fluid m-auto">
+      <div class="heading">Sale Products</div>
+      <div class="container-fluid">
+        <div class="container" id="sale-products"></div>
+      </div>
+    </div>
+
+    <!-- From the blog -->
+    <div class="container-fluid m-auto">
+      <div class="heading">From The Blog</div>
+      <div class="container-fluid">
+        <div class="row a-center h-scroll" id="blog-container"></div>
+      </div>
+    </div>
+
+    <!-- Brand directory -->
+    <div class="container-fluid m-auto brand-directory">
+      <div class="heading">Top Stories:Brand Directory</div>
+      <div class="row-c j-around">
+        <div class="row">
+          <p>
+            <b>Mobiles:</b>Lorem ipsum dolor Lorem ipsum dolor sit. sit amet.
+          </p>
+        </div>
+        <div class="row">
+          <p>
+            <b>Camera:</b>Lorem Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Accusantium et cumque facere. ipsum dolor sit
+            amet.
+          </p>
+        </div>
+        <div class="row">
+          <p><b>Laptops:</b>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="row">
+          <p>
+            <b>Cloths:</b>Lorem Lorem ipsum dolor sit. Lorem, ipsum. ipsum dolor
+            sit amet.
+          </p>
+        </div>
+        <div class="row">
+          <p><b>Groceries:</b>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid m-auto">
+        <div class="row a-center j-around">
+          <div class="conatiner about">
+            <div class="brand">Myshop</div>
+            <p>Someone@gmail.com</p>
+            <p>+94-12-3456789</p>
+            <p>@Myshop</p>
+            <div class="row a-center j-around social">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+            </div>
+          </div>
+          <div class="row-c j-around">
+            <h3>Information</h3>
+            <p>About Us</p>
+            <p>Checkout</p>
+            <p>Services</p>
+          </div>
+          <div class="row-c j-around">
+            <h3>My Account</h3>
+            <p>Contact</p>
+            <p>Shoppping Cart</p>
+            <p>Shop</p>
+          </div>
+          <div class="row-c j-around">
+            <h3>Quick shop</h3>
+            <p>Shopping returns</p>
+            <p>Contact</p>
+            <p>Affiliates</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="include/js/temp.js"></script>
+    <script src="include/js/main.js"></script>
+    <script src="include/js/animation.js"></script>
+  </body>
+</html>

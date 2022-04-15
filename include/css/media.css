@@ -1,0 +1,134 @@
+@media (max-width: 992px) {
+  header {
+    width: 90%;
+    z-index: 5;
+  }
+  .nav-bar {
+    height: 120px;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    padding: 0px 10px;
+  }
+  .nav-bar .row {
+    margin: 0 20px;
+  }
+  .banner-lg img {
+    width: 60%;
+  }
+  .banner-lg h1 {
+    word-wrap: break-word;
+  }
+  .vertical-menu {
+    top: 90%;
+  }
+  .benifit .row {
+    border: none;
+    flex-wrap: wrap;
+  }
+  .benifit .row-c {
+    padding: 10px 10px;
+    width: 45%;
+    border: 1px solid var(--dark-quarter);
+    margin: 0 auto;
+  }
+  .h-scroll {
+    overflow-x: scroll;
+  }
+  .h-scroll::-webkit-scrollbar {
+    background-color: var(--bg-scroll);
+    height: 10px;
+    border-radius: 20px;
+  }
+  .h-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--inner-scroll);
+  }
+  .h-scroll::-webkit-scrollbar-corner {
+    background-color: var(--bg-scroll);
+    border-radius: 20%;
+  }
+  /* deal of the week */
+  .dealoftheweek {
+    width: 200;
+    height: 400px;
+  }
+  .dealoftheweek img {
+    height: 150px;
+  }
+
+}
+@media (max-width: 768px) {
+  h1{
+    font-size: 26px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .nav-top p {
+    display: none;
+  }
+  .nav-bar .row {
+    margin: 0;
+  }
+  .nav-bar {
+    height: 300px;
+  }
+  .nav-bar .cart {
+    flex-direction: column;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: unset;
+  }
+  .nav-link {
+    margin-top: 20px;
+  }
+  .banner-lg {
+    height: 300px;
+    overflow: hidden;
+  }
+  .banner-lg .row-c {
+    z-index: 2;
+  }
+  .banner-lg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  .benifit .row-c {
+    padding: 10px 10px;
+    width: 40%;
+    border: 1px solid var(--dark-quarter);
+    margin: 0 auto;
+  }
+  .product-container{
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    grid-gap: 20px;
+  }
+  .product{
+    width:150px;
+    height: 250px;}
+}
+@media(max-width:576px){
+  .banner{
+    width:300px;
+    height:250px;
+    position: relative;
+  }
+  .banner img{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    opacity: 0.4;
+  }
+  .banner .row-c{
+    z-index: 2;
+  }
+}

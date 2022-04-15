@@ -1,0 +1,22 @@
+.flyin{
+    opacity: 0;
+    transition: 0.8s;
+    transform: translate(-10px, 10px);
+}
+.flyin.show{
+    opacity: 1;
+    transform: translate(0, 0);
+
+}
+.flyin.left{
+    transform: translateX(-200px);
+}
+.flyin.right{
+    transform: translateX(200px);
+}
+.flyin.zoom{
+    transform: scale(0.5);
+}
+.flyin.right.show,.flyin.left.show,.flyin.zoom.show{
+    transform: translate(0, 0) scale(1);
+}
