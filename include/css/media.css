@@ -54,7 +54,14 @@
   .dealoftheweek img {
     height: 150px;
   }
-
+  footer .row{
+    flex-wrap: wrap;
+  }
+  footer .row-c{
+    min-width:50%;
+    margin-top: 20px;
+  }
+ 
 }
 @media (max-width: 768px) {
   h1{
@@ -78,17 +85,14 @@
   .nav-bar {
     height: 300px;
   }
-  .nav-bar .cart {
-    flex-direction: column;
-  }
   .nav-menu {
     flex-direction: column;
     align-items: flex-start;
     justify-content: unset;
   }
-  .nav-link {
-    margin-top: 20px;
-  }
+ .nav-menu li{
+   margin-top: 10px;
+ }
   .banner-lg {
     height: 300px;
     overflow: hidden;
@@ -119,8 +123,10 @@
 @media(max-width:576px){
   .banner{
     width:300px;
-    height:250px;
-    position: relative;
+    height:200px;
+  }
+  .banner.flyin.left{
+    transform: translate(0,0);
   }
   .banner img{
     position: absolute;
@@ -130,5 +136,15 @@
   }
   .banner .row-c{
     z-index: 2;
+  }
+  .nav-bar .cart {
+    flex-direction: column;
+  }
+  .nav-bar .cart i{
+    margin-top: 20px;
+  }
+  footer .row-c{
+    min-width:80%;
+    margin-top: 20px;
   }
 }

@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "RobotoCondensed-Light.ttf";
-  src: url(../RobotoCondensed-Light.ttf);
+  src: url(..font/RobotoCondensed-Light.ttf);
 }
 body {
   font-family: "RobotoCondensed-Light";
@@ -436,6 +436,7 @@ footer .row {
   height: 100%;
 }
 footer .row-c p {
+  min-width:200px;
   margin: 5px 0;
   cursor: pointer;
   user-select: none;
