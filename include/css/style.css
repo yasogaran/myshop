@@ -444,3 +444,7 @@ footer .row-c p {
 footer .row-c p:hover {
   color: var(--success);
 }
+.temp-h1{
+  font-size: 50px;
+  margin:0;
+}
